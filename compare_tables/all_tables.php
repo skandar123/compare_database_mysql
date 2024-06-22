@@ -62,8 +62,8 @@ All Tables
         ?>
         <div class="grid-item tab-heading"><b>Table</b></div>
         <div class="grid-item tab-heading"><b>Column</b></div>
-        <div class="grid-item tab-heading"><b>DataType of <?php echo $db1; ?></b></div>
-        <div class="grid-item tab-heading"><b>DataType of <?php echo $db2; ?></b></div>
+        <div class="grid-item tab-heading"><b>DataType of Database:</b> <?php echo $db1; ?></div>
+        <div class="grid-item tab-heading"><b>DataType of Database:</b> <?php echo $db2; ?></div>
         <?php
         while($row1 = $result1->fetch_assoc()) {?>
             <div class="grid-item-green"><b><?php echo $row1["TB"];?></b></div>
@@ -89,7 +89,7 @@ All Tables
 
     <div class="grid-container-3">
     
-    <div class="grid-item tab-heading span-3"><b><?php echo $db1; ?></b></div>
+    <div class="grid-item tab-heading span-3"><b>Database:</b> <?php echo $db1; ?></div>
     <?php
     if ($result2->num_rows > 0) {
         ?>
@@ -115,7 +115,7 @@ All Tables
 
     <div class="grid-container-3">
     
-    <div class="grid-item tab-heading span-3"><b><?php echo $db2; ?></b></div>
+    <div class="grid-item tab-heading span-3"><b>Database:</b> <?php echo $db2; ?></div>
     <?php
     if ($result3->num_rows > 0) {
         ?>
