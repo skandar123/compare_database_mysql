@@ -52,13 +52,14 @@ include("db_query.php");
 
     <div class="grid-container">
     <div class="grid-item tab-heading"></div>
-    <div class="grid-item tab-heading"><b><?php echo $table1; ?></b></div>
-    <?php 
+    <div class="grid-item tab-heading">
+        <b>Database:</b> <?php echo $db1; ?>, <b>Table:</b> <?php echo $table1; ?></div>
+    <?php
     if ($result1->num_rows > 0) {
         ?>
         <div class="grid-item green"><b>Column</b></div>
         <div class="grid-item green"><b>DataType</b></div>
-        <?php 
+        <?php
         while($row1 = $result1->fetch_assoc()) {?>
             
             <div class="grid-item"><b><?php echo $row1["COLUMN_NAME"];?></b></div>
@@ -74,13 +75,14 @@ include("db_query.php");
     <div class="tab">
     
     <div class="grid-container-single">
-    <div class="grid-item tab-heading"><b><?php echo $table2; ?></b></div>
-    <?php 
+    <div class="grid-item tab-heading">
+        <b>Database:</b> <?php echo $db2; ?>, <b>Table:</b> <?php echo $table2; ?></div>
+    <?php
     if ($result2->num_rows > 0) {
         ?>
         
         <div class="grid-item green"><b>DataType</b></div>
-        <?php 
+        <?php
         while($row2 = $result2->fetch_assoc()) {?>
             
            
@@ -102,7 +104,8 @@ include("db_query.php");
     <div class="tab">
     
     <div class="grid-container">
-    <div class="grid-item span tab-heading"><b><?php echo $table1; ?></b></div>
+    <div class="grid-item span tab-heading">
+        <b>Database:</b> <?php echo $db1; ?>, <b>Table:</b> <?php echo $table1; ?></div>
     <?php 
     if ($result3->num_rows > 0) {
         ?>
@@ -123,7 +126,8 @@ include("db_query.php");
     <div class="tab space">
     
     <div class="grid-container">
-    <div class="grid-item span tab-heading"><b><?php echo $table2; ?></b></div>
+    <div class="grid-item span tab-heading">
+        <b>Database:</b> <?php echo $db2; ?>, <b>Table:</b> <?php echo $table2; ?></div>
     <?php 
     if ($result4->num_rows > 0) {
         ?>
